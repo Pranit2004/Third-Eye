@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Video Settings"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginBottom="24dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Video Resolution"
+        android:textSize="18sp"
+        android:textColor="#555555"
+        android:layout_marginBottom="12dp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroupQuality"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rbHigh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Best Available (Usually 4K/HD)"
+            android:padding="10dp"/>
+
+        <RadioButton
+            android:id="@+id/rb1080"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Full HD (1080p)"
+            android:padding="10dp"/>
+
+        <RadioButton
+            android:id="@+id/rb720"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HD (720p)"
+            android:padding="10dp"/>
+
+        <RadioButton
+            android:id="@+id/rb480"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SD (480p)"
+            android:padding="10dp"/>
+
+        <RadioButton
+            android:id="@+id/rbLow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Low Quality (Saves Space)"
+            android:padding="10dp"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnSaveSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Settings"
+        android:backgroundTint="#000000"
+        android:layout_marginTop="30dp"/>
+
+</LinearLayout>

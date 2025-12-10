@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@drawable/bg_gradient">
+
+    <ImageButton
+        android:id="@+id/btnSettings"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_settings"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:scaleType="fitCenter"
+        android:padding="8dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:contentDescription="Settings"
+        android:tint="#444444"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Third Eye Safety"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginBottom="40dp"/>
+
+        <Button
+            android:id="@+id/btnToggleRecord"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:text="Start Audio Mode"
+            android:backgroundTint="#D32F2F"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status: Ready"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="30dp"
+            android:textColor="#666666"/>
+
+        <Button
+            android:id="@+id/btnVideoRecord"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:text="Start Video Mode"
+            android:backgroundTint="#0288D1"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/btnGallery"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:text="View Recordings"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#4CAF50"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Developed by Maheshwara"
+        android:textColor="#888888"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"/>
+
+</RelativeLayout>
